@@ -6,6 +6,7 @@ https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sales-anomal
 https://learn.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-web-api-ml-net
 
 https://www.bezkoder.com/react-multiple-file-upload-typescript/
+https://github.com/bezkoder/react-dropzone-multiple-files-upload
 
 kilka ai potem system glosujacy prosty (5 glosow)  
 
