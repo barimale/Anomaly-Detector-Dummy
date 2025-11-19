@@ -14,3 +14,5 @@ przyjmij dane, rozeslij do workerow zbierz dane rabbitmq i wyswietl signalr
 zrobic model anomalii oraz model regularny do wykrywania anomalli  
 
 podman albo docker 
+
+wczytaj dane do questdb, rozeslij zlecenia wykrycia anomalli, reaguj onchange mssql, gdy komplet danych wykonaj glosowanie, wyswietl wynik przez signalr na frontendzie 
