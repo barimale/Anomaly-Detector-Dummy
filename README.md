@@ -1,4 +1,7 @@
 # Anomaly-Detector-Dummy
+
+https://dev.to/alisson_podgurski/detecting-anomalies-with-net-and-mlnet-a-practical-guide-ng5
+
 https://learn.microsoft.com/pl-pl/training/modules/qsharp-create-first-quantum-development-kit/3-random-bit-generator
 
 https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sales-anomaly-detection
