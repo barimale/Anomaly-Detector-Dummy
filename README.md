@@ -6,3 +6,5 @@ https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sales-anomal
 https://learn.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-web-api-ml-net
 
 kilka ai potem system glosujacy prosty (5 glosow)  
+
+przyjmij dane, rozeslij do workerow zbierz dane rabbitmq i wyswietl signalr 
