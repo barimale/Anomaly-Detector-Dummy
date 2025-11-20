@@ -27,7 +27,6 @@ namespace Algorithm.B.WorkerService {
                 var body = ea.Body.ToArray();
                 var obj = JsonSerializer.Deserialize<AlgorithmDetailsB>(body);
 
-
                 if (obj != null) {
                     // execute algorith A here
                     using var scope = _scopeFactory.CreateScope();

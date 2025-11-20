@@ -106,17 +106,17 @@ namespace UploadStreamToQuestDB.API.Controllers {
 
                 var algorithmA = new AlgorithmDetailsA() {
                     Id = Guid.NewGuid().ToString(),
-                    SessionId = files.SessionId
+                    SessionId = files.SessionId + "A"
                 };
                 string msgA = JsonSerializer.Serialize(algorithmA);
                 var algorithmB = new AlgorithmDetailsA() {
                     Id = Guid.NewGuid().ToString(),
-                    SessionId = files.SessionId
+                    SessionId = files.SessionId + "B"
                 };
                 string msgB = JsonSerializer.Serialize(algorithmB);
                 var algorithmC = new AlgorithmDetailsA() {
                     Id = Guid.NewGuid().ToString(),
-                    SessionId = files.SessionId
+                    SessionId = files.SessionId + "C"
                 };
                 string msgC = JsonSerializer.Serialize(algorithmC);
 
