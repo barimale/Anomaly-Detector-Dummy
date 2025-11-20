@@ -2,6 +2,7 @@ using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
 using Common.RabbitMQ;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
+using UploadStreamToQuestDB.API.Controllers;
 
 namespace AlgorithmWorkerService {
     public class Worker : BackgroundService {
@@ -19,7 +20,7 @@ namespace AlgorithmWorkerService {
             AsyncEventHandler<BasicDeliverEventArgs> bo = async (model, ea) =>
             {
                 var body = ea.Body.ToArray();
-                var obj = JsonSerializer.Deserialize<RegisterModelCommand>(body);
+                var obj = JsonSerializer.Deserialize<AlgorithmDetails>(body);
 
                 using var scope = _scopeFactory.CreateScope();
                 var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();

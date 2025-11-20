@@ -11,6 +11,8 @@ using UploadStreamToQuestDB.API.Middlewares.GlobalExceptions.Handler;
 using UploadStreamToQuestDB.API.SwaggerFilters;
 using UploadStreamToQuestDB.Application;
 using UploadStreamToQuestDB.Infrastructure;
+using Albergue.Administrator.HostedServices.Hub;
+using Albergue.Administrator.HostedServices;
 
 namespace UploadStreamToQuestDB.API {
     public class Startup {
@@ -47,6 +49,8 @@ namespace UploadStreamToQuestDB.API {
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(Configuration)
                 .CreateLogger();
+
+            services.AddHostedService<LocalesHostedService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
@@ -68,6 +72,7 @@ namespace UploadStreamToQuestDB.API {
 
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
+                endpoints.MapHub<LocalesStatusHub>("/localesHub");
             });
 
 

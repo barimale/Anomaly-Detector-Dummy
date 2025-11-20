@@ -16,6 +16,7 @@
       <PackageReference Include="TinyCsvParser" Version="2.7.0" />
       <PackageReference Include="UploadStreamNET8" Version="8.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.0" />
+        <PackageReference Include="PubSub" Version="4.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.3.1" />
     </ItemGroup>
     <PropertyGroup>
