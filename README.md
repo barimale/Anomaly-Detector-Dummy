@@ -1,4 +1,6 @@
 # Anomaly-Detector-Dummy
+https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings
+
 https://learn.microsoft.com/pl-pl/training/modules/qsharp-create-first-quantum-development-kit/3-random-bit-generator
 
 https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/sales-anomaly-detection
