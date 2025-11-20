@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Algorithm.Common\Algorithm.Common.csproj" />
     <ProjectReference Include="..\Christmas.Secret.Gifter.Database.SQLite\Christmas.Secret.Gifter.Infrastructure.csproj" />
     <ProjectReference Include="..\Christmas.Secret.Gifter.Database.SQLite\MSSql.Infrastructure.csproj" />
     <ProjectReference Include="..\Christmas.Secret.Gifter.Domain\Christmas.Secret.Gifter.Domain.csproj" />
