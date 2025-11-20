@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "R:\\Anomaly-Detector-Dummy2\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}|Common.RabbitMQ\\Common.RabbitMQ.csproj|r:\\anomaly-detector-dummy2\\backend\\common.rabbitmq\\queueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}|Common.RabbitMQ\\Common.RabbitMQ.csproj|solutionrelative:common.rabbitmq\\queueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}|Common.RabbitMQ\\Common.RabbitMQ.csproj|r:\\anomaly-detector-dummy2\\backend\\common.rabbitmq\\iqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}|Common.RabbitMQ\\Common.RabbitMQ.csproj|solutionrelative:common.rabbitmq\\iqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}|Common.RabbitMQ\\Common.RabbitMQ.csproj|r:\\anomaly-detector-dummy2\\backend\\common.rabbitmq\\queueconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}|Common.RabbitMQ\\Common.RabbitMQ.csproj|solutionrelative:common.rabbitmq\\queueconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|r:\\anomaly-detector-dummy2\\backend\\algorithmworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|solutionrelative:algorithmworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|r:\\anomaly-detector-dummy2\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QueueService.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\Common.RabbitMQ\\QueueService.cs",
+              "RelativeDocumentMoniker": "Common.RabbitMQ\\QueueService.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\Common.RabbitMQ\\QueueService.cs",
+              "RelativeToolTip": "Common.RabbitMQ\\QueueService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T15:01:35.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IQueueService.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\Common.RabbitMQ\\IQueueService.cs",
+              "RelativeDocumentMoniker": "Common.RabbitMQ\\IQueueService.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\Common.RabbitMQ\\IQueueService.cs",
+              "RelativeToolTip": "Common.RabbitMQ\\IQueueService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T15:01:32.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QueueConsumerService.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\Common.RabbitMQ\\QueueConsumerService.cs",
+              "RelativeDocumentMoniker": "Common.RabbitMQ\\QueueConsumerService.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\Common.RabbitMQ\\QueueConsumerService.cs",
+              "RelativeToolTip": "Common.RabbitMQ\\QueueConsumerService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T15:00:05.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Program.cs",
+              "RelativeDocumentMoniker": "AlgorithmWorkerService\\Program.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Program.cs",
+              "RelativeToolTip": "AlgorithmWorkerService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:59:23.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Worker.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Worker.cs",
               "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Worker.cs",
               "RelativeToolTip": "AlgorithmWorkerService\\Worker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T14:51:47.813Z",
               "EditorCaption": ""

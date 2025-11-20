@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "R:\\Anomaly-Detector-Dummy2\\backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|r:\\anomaly-detector-dummy2\\backend\\algorithmworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|solutionrelative:algorithmworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|r:\\anomaly-detector-dummy2\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Program.cs",
+              "RelativeDocumentMoniker": "AlgorithmWorkerService\\Program.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Program.cs",
+              "RelativeToolTip": "AlgorithmWorkerService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:59:23.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Worker.cs",
+              "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Worker.cs",
+              "RelativeToolTip": "AlgorithmWorkerService\\Worker.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:51:47.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
