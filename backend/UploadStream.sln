@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Christmas.Secret.Gifter.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Christmas.Secret.Gifter.Infrastructure", "Christmas.Secret.Gifter.Database.SQLite\Christmas.Secret.Gifter.Infrastructure.csproj", "{198CD814-7EEC-EFFB-1220-1D048297AC98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.RabbitMQ", "Common.RabbitMQ\Common.RabbitMQ.csproj", "{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,18 @@ Global
 		{198CD814-7EEC-EFFB-1220-1D048297AC98}.Release|x64.Build.0 = Release|Any CPU
 		{198CD814-7EEC-EFFB-1220-1D048297AC98}.Release|x86.ActiveCfg = Release|Any CPU
 		{198CD814-7EEC-EFFB-1220-1D048297AC98}.Release|x86.Build.0 = Release|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Debug|x64.Build.0 = Debug|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Debug|x86.Build.0 = Debug|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x64.ActiveCfg = Release|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x64.Build.0 = Release|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x86.ActiveCfg = Release|Any CPU
+		{7EAEFD5B-D5A7-41A3-B0DD-7736D55B1CF3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
