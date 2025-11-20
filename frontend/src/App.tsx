@@ -7,8 +7,8 @@ const App: React.FC = () => {
   return (
     <div className="container" style={{ width: "600px" }}>
       <div className="my-3">
-        <h3>bezkoder.com</h3>
-        <h4>React Typescript Multiple Files Upload</h4>
+        <h3>HackNation 2025</h3>
+        <h4>Wykrywacz anomalii</h4>
       </div>
 
       <FilesUpload />

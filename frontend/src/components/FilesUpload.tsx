@@ -38,14 +38,14 @@ const FilesUpload: React.FC = () => {
       .then(() => {
         setMessage((prevMessage) => [
           ...prevMessage,
-          file.name + ": Successful!"
+          file.name + ": Sukces!"
         ]);
       })
       .catch((err: any) => {
         _progressInfos[idx].percentage = 0;
         setProgressInfos(_progressInfos);
         console.log(JSON.stringify(err));
-        let msg = file.name + ": Failed!";
+        let msg = file.name + ": Zakończone błędem!";
         if (err.response && err.response.data && err.response.data.message) {
           msg += " " + err.response.data.message;
         }
@@ -114,6 +114,7 @@ const FilesUpload: React.FC = () => {
             className="btn btn-success btn-sm"
             disabled={!selectedFiles}
             onClick={uploadFiles}
+            
           >
             Upload
           </button>
@@ -129,18 +130,6 @@ const FilesUpload: React.FC = () => {
           </ul>
         </div>
       )}
-
-      <div className="card">
-        <div className="card-header">List of Files</div>
-        <ul className="list-group list-group-flush">
-          {fileInfos &&
-            fileInfos.map((file, index) => (
-              <li className="list-group-item" key={index}>
-                <a href={file.url}>{file.name}</a>
-              </li>
-            ))}
-        </ul>
-      </div>
     </div>
   );
 };
