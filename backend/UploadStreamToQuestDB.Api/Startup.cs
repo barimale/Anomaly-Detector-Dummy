@@ -52,6 +52,7 @@ namespace UploadStreamToQuestDB.API {
                 .CreateLogger();
 
             services.AddHostedService<LocalesHostedService>();
+            services.AddHostedService<BackgroundNotifier>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
@@ -74,6 +75,7 @@ namespace UploadStreamToQuestDB.API {
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
                 endpoints.MapHub<LocalesStatusHub>("/localesHub");
+                endpoints.MapHub<NotificationHub>("/notifications");
             });
 
 

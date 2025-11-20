@@ -6,13 +6,13 @@ import { HubConnectionBuilder, LogLevel, IHttpConnectionOptions } from '@microso
 
 const App: React.FC = () => {
   const userToken = "adsjalksdjalkdsjadlka";//useContext(AuthContext);
-  const [localesInProgress, setLocalesInProgress] = useState<boolean>(false);
+  const [localesInProgress, setLocalesInProgress] = useState<boolean | null>(null);
   const options: IHttpConnectionOptions = {
     accessTokenFactory: () => `${userToken}`,
     withCredentials: false,
   };
   const connection = new HubConnectionBuilder()
-    .withUrl(`http://localhost:53654/localesHub`, options)
+    .withUrl(`http://localhost:53654/notifications`, options)
     .configureLogging(LogLevel.Information)
     .withAutomaticReconnect()
     .build();
@@ -46,10 +46,17 @@ const App: React.FC = () => {
     <div className="container" style={{ width: "600px" }}>
       <div className="my-3">
         <h3>HackNation 2025</h3>
-        <h4>Wykrywacz anomalii</h4>
+        <h4>Wyszukiwarka anomalii</h4>
       </div>
 
       <FilesUpload />
+      <p style={{
+        color: localesInProgress != null ? (localesInProgress ? 'green' : 'red') : 'blue'
+      }}>{localesInProgress != null ? (localesInProgress ? 
+        'Brak anomalii!' : 
+        'Wykryto anomalie!') : 
+        'Praca w toku'}
+      </p>
     </div>
   );
 }

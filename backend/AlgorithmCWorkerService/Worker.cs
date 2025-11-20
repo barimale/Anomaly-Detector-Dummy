@@ -3,6 +3,7 @@ using Common.RabbitMQ;
 using Common.RabbitMQ.Model;
 using MSSql.Infrastructure.Entities;
 using MSSql.Infrastructure.Repositories.Abstractions;
+using Questdb.Net;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
 
@@ -32,6 +33,8 @@ namespace Algorithm.C.WorkerService {
                     // execute algorithm C here
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+
+                    var quest = scope.ServiceProvider.GetRequiredService<IQuestDBClient>();
 
                     var result = await repo.AddAsync(new EventEntry() {
                         Id = Guid.NewGuid().ToString()

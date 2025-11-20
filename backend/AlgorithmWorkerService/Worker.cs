@@ -10,16 +10,13 @@ namespace Algorithm.A.WorkerService {
     public class Worker : BackgroundService {
         private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _scopeFactory;
-        private readonly IQuestDBClient questDbClient;
 
         //private readonly IML executorService;
 
         public Worker(ILogger<Worker> logger,
-            IServiceScopeFactory _scopeFactory,
-            IQuestDBClient questDbClient) {
+            IServiceScopeFactory _scopeFactory) {
             _logger = logger;
             this._scopeFactory = _scopeFactory;
-            this.questDbClient = questDbClient;
             //this.executorService = executorService;
         }
 
@@ -37,6 +34,8 @@ namespace Algorithm.A.WorkerService {
 
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+
+                    var quest = scope.ServiceProvider.GetRequiredService<IQuestDBClient>();
 
                     // zrobic zapis do bazy AlgorithmDetailsB
                     var result = await repo.AddAsync(new EventEntry() {
