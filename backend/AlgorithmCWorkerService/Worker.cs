@@ -26,7 +26,7 @@ namespace Algorithm.C.WorkerService {
             AsyncEventHandler<BasicDeliverEventArgs> bo = async (model, ea) =>
             {
                 var body = ea.Body.ToArray();
-                var obj = JsonSerializer.Deserialize<AlgorithmDetails>(body);
+                var obj = JsonSerializer.Deserialize<AlgorithmDetailsC>(body);
 
                 using var scope = _scopeFactory.CreateScope();
                 var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();

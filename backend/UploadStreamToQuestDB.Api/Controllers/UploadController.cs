@@ -109,12 +109,25 @@ namespace UploadStreamToQuestDB.API.Controllers {
 
                 // zapisz do bazy guida
 
-                var algorithm = new AlgorithmDetails() {
+                var algorithmA = new AlgorithmDetailsA() {
                     Id = Guid.NewGuid().ToString(),
                     SessionId = files.SessionId
                 };
-                string msg = JsonSerializer.Serialize(algorithm);
-                await queueService.Publish(msg);
+                string msgA = JsonSerializer.Serialize(algorithmA);
+                var algorithmB = new AlgorithmDetailsA() {
+                    Id = Guid.NewGuid().ToString(),
+                    SessionId = files.SessionId
+                };
+                string msgB = JsonSerializer.Serialize(algorithmB);
+                var algorithmC = new AlgorithmDetailsA() {
+                    Id = Guid.NewGuid().ToString(),
+                    SessionId = files.SessionId
+                };
+                string msgC = JsonSerializer.Serialize(algorithmC);
+
+                await queueService.Publish(msgA);
+                await queueService.Publish(msgB);
+                await queueService.Publish(msgC);
 
                 return Ok(new {
                     files.SessionId,
