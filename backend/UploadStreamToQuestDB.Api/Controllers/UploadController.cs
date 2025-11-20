@@ -26,7 +26,6 @@ namespace UploadStreamToQuestDB.API.Controllers {
         private readonly ILogger<UploadController> _logger;
         private readonly IUploadPipeline _pipeline;
         private readonly IQueueService queueService;
-        private readonly PubSub.Hub _hub;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadController"/> class.
@@ -40,7 +39,6 @@ namespace UploadStreamToQuestDB.API.Controllers {
             _logger = logger;
             _pipeline = pipeline;
             this.queueService = queueService;
-            this._hub = PubSub.Hub.Default;
         }
 
         /// <summary>
@@ -104,9 +102,6 @@ namespace UploadStreamToQuestDB.API.Controllers {
 
                 return BadRequest(problem);
             } else {
-
-                // zapisz do bazy te wyslania
-
                 // zapisz do bazy guida
 
                 var algorithmA = new AlgorithmDetailsA() {

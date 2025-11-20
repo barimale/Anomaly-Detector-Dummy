@@ -23,17 +23,20 @@ namespace Algorithm.A.WorkerService {
         protected override async Task ExecuteAsync(CancellationToken cancellationToken) {
             _logger.LogInformation("Neural Network Hosted Service running.");
 
-            AsyncEventHandler<BasicDeliverEventArgs> bo = async (model, ea) =>
-            {
+            AsyncEventHandler<BasicDeliverEventArgs> bo = async (model, ea) => {
                 var body = ea.Body.ToArray();
                 var obj = JsonSerializer.Deserialize<AlgorithmDetailsA>(body);
 
-                using var scope = _scopeFactory.CreateScope();
-                var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+                if (obj != null)
+                {
+                    // execute algorith A here
+                    using var scope = _scopeFactory.CreateScope();
+                    var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 
-                var result = await repo.AddAsync(new EventEntry() {
-                    Id = Guid.NewGuid().ToString()
-                }, cancellationToken);
+                    var result = await repo.AddAsync(new EventEntry() {
+                        Id = Guid.NewGuid().ToString()
+                    }, cancellationToken);
+                }
             };
 
             using var scope = _scopeFactory.CreateScope();
