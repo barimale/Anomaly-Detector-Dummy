@@ -1,6 +1,4 @@
-﻿
-namespace API.SlowTrainMachineLearning.Services
-{
+﻿namespace Common.RabbitMQ {
     public interface IQueueService
     {
         Task Publish(string message);

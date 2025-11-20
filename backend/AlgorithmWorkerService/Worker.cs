@@ -1,20 +1,16 @@
-using API.SlowTrainMachineLearning.Services;
 using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
+using Common.RabbitMQ;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
 
 namespace AlgorithmWorkerService {
     public class Worker : BackgroundService {
         private readonly ILogger<Worker> _logger;
-        private readonly IEventRepository eventRepository;
-        private readonly IQueueConsumerService _queueConsumerService;
-
+        private readonly IServiceScopeFactory _scopeFactory;
         public Worker(ILogger<Worker> logger,
-            IEventRepository eventRepository,
-            IQueueConsumerService queueConsumerService) {
+            IServiceScopeFactory _scopeFactory) {
             _logger = logger;
-            this.eventRepository = eventRepository;
-            this._queueConsumerService = queueConsumerService;
+            this._scopeFactory = _scopeFactory;
         }
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken) {
@@ -24,16 +20,22 @@ namespace AlgorithmWorkerService {
             {
                 var body = ea.Body.ToArray();
                 var obj = JsonSerializer.Deserialize<RegisterModelCommand>(body);
-                var result = await eventRepository.AddAsync(new Christmas.Secret.Gifter.Infrastructure.Entities.EventEntry() {
+
+                using var scope = _scopeFactory.CreateScope();
+                var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+
+                var result = await repo.AddAsync(new Christmas.Secret.Gifter.Infrastructure.Entities.EventEntry() {
                     Id = Guid.NewGuid().ToString()
                 }, cancellationToken);
             };
 
-            await _queueConsumerService.StartAsync(bo, cancellationToken);
+            using var scope = _scopeFactory.CreateScope();
+            var repo = scope.ServiceProvider.GetRequiredService<IQueueConsumerService>();
+            await repo.StartAsync(bo, cancellationToken);
         }
 
-        public override Task StopAsync(CancellationToken cancellationToken) {
-            return _queueConsumerService.StopAsync(cancellationToken);
-        }
+        //public override Task StopAsync(CancellationToken cancellationToken) {
+        //    return _queueConsumerService.StopAsync(cancellationToken);
+        //}
     }
 }

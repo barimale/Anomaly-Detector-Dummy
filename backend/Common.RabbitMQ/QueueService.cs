@@ -3,8 +3,7 @@ using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace API.SlowTrainMachineLearning.Services
-{
+namespace Common.RabbitMQ {
     public class QueueService : IQueueService
     {
         public static string CHANNEL_NAME = "model-creation-channel";

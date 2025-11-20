@@ -3,8 +3,7 @@ using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace API.SlowTrainMachineLearning.Services
-{
+namespace Common.RabbitMQ {
     public class QueueConsumerService : IQueueConsumerService
     {
         private IConnection _connection;
