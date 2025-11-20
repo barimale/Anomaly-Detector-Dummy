@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Christmas.Secret.Gifter.Domain;
+using MSSql.Domain;
 using MSSql.Infrastructure.Entities;
 
 namespace MSSql.Infrastructure.Extensions {

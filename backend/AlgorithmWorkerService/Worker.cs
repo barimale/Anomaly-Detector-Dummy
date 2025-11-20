@@ -1,7 +1,8 @@
 using Algorithm.A.WorkerService.Service;
-using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
 using Common.RabbitMQ;
 using Common.RabbitMQ.Model;
+using MSSql.Infrastructure.Entities;
+using MSSql.Infrastructure.Repositories.Abstractions;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
 
@@ -30,7 +31,7 @@ namespace Algorithm.A.WorkerService {
                 using var scope = _scopeFactory.CreateScope();
                 var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 
-                var result = await repo.AddAsync(new Christmas.Secret.Gifter.Infrastructure.Entities.EventEntry() {
+                var result = await repo.AddAsync(new EventEntry() {
                     Id = Guid.NewGuid().ToString()
                 }, cancellationToken);
             };

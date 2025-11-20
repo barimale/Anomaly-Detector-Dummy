@@ -1,6 +1,6 @@
 using Algorithm.A.WorkerService.Service;
-using Christmas.Secret.Gifter.Infrastructure;
 using Common.RabbitMQ;
+using MSSql.Infrastructure;
 
 namespace Algorithm.A.WorkerService {
     public class Program {

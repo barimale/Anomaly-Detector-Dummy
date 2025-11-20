@@ -1,6 +1,6 @@
 ﻿using TypeGen.Core.TypeAnnotations;
 
-namespace Christmas.Secret.Gifter.Domain
+namespace MSSql.Domain
 {
     [ExportTsEnum]
     public enum EventState

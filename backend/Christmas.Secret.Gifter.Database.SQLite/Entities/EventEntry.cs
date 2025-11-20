@@ -1,4 +1,5 @@
-﻿using Christmas.Secret.Gifter.Domain;
+﻿using MSSql.Domain;
+
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MSSql.Infrastructure.Entities {
