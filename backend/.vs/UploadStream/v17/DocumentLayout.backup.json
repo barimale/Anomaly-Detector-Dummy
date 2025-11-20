@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "R:\\Anomaly-Detector-Dummy2\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy2\\backend\\uploadstreamtoquestdb.api\\hub\\hostedservice\\localeshostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\hub\\hostedservice\\localeshostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy2\\backend\\uploadstreamtoquestdb.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|r:\\anomaly-detector-dummy2\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy2\\backend\\uploadstreamtoquestdb.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy2\\backend\\uploadstreamtoquestdb.api\\hub\\hostedservice\\localeshostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\hub\\hostedservice\\localeshostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|r:\\anomaly-detector-dummy2\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\AlgorithmWorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D9AFEC1-C7D8-42E9-99D6-535B5FF9779B}|UploadStreamToQuestDB.Application\\UploadStreamToQuestDB.Application.csproj|r:\\anomaly-detector-dummy2\\backend\\uploadstreamtoquestdb.application\\handlers\\uploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,17 +85,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LocalesHostedService.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\UploadStreamToQuestDB.Api\\Hub\\HostedService\\LocalesHostedService.cs",
               "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Hub\\HostedService\\LocalesHostedService.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\UploadStreamToQuestDB.Api\\Hub\\HostedService\\LocalesHostedService.cs",
               "RelativeToolTip": "UploadStreamToQuestDB.Api\\Hub\\HostedService\\LocalesHostedService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T16:42:41.252Z",
               "EditorCaption": ""
@@ -167,13 +167,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Startup.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\UploadStreamToQuestDB.Api\\Startup.cs",
               "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Startup.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\UploadStreamToQuestDB.Api\\Startup.cs",
               "RelativeToolTip": "UploadStreamToQuestDB.Api\\Startup.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAcwEkAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T16:06:13.849Z",
               "EditorCaption": ""
@@ -288,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Worker.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\AlgorithmWorkerService\\Worker.cs",
               "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
@@ -301,13 +301,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UploadController.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy2\\backend\\UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
               "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy2\\backend\\UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
               "RelativeToolTip": "UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAWwGwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAzwC0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T15:04:18.248Z",
               "EditorCaption": ""

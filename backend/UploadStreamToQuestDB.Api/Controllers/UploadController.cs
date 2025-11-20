@@ -14,6 +14,7 @@ using UploadStreamToQuestDB.Application;
 using UploadStreamToQuestDB.Domain;
 using Common.RabbitMQ;
 using System.Text.Json;
+using PubSub;
 
 namespace UploadStreamToQuestDB.API.Controllers {
     /// <summary>
@@ -25,6 +26,7 @@ namespace UploadStreamToQuestDB.API.Controllers {
         private readonly ILogger<UploadController> _logger;
         private readonly IUploadPipeline _pipeline;
         private readonly IQueueService queueService;
+        private readonly Hub _hub;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadController"/> class.
@@ -38,6 +40,7 @@ namespace UploadStreamToQuestDB.API.Controllers {
             _logger = logger;
             _pipeline = pipeline;
             this.queueService = queueService;
+            this._hub = Hub.Default;
         }
 
         /// <summary>

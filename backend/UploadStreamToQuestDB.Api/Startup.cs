@@ -28,6 +28,7 @@ namespace UploadStreamToQuestDB.API {
                        ctx.ProblemDetails.Extensions.Add("nodeId", Environment.MachineName));
             services.AddExceptionHandler<GlobalExceptionHandler>();
 
+            services.AddSignalR();
             services.AddCors();
             services.AddControllers();
             services.AddQuestDb(Configuration["ReadQuestDbAddress"]);
