@@ -1,4 +1,4 @@
-﻿namespace UploadStreamToQuestDB.API.Controllers {
+﻿namespace Common.RabbitMQ.Model {
     public class AlgorithmDetails {
 
         public string Id { get; set; }

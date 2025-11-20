@@ -1,4 +1,4 @@
-﻿namespace AlgorithmAWorkerService.Service {
+﻿namespace Algorithm.A.WorkerService.Service {
     public class MLNetExecutorA : IML
     {
         public void ExecuteMLTask()

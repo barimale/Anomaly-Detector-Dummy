@@ -1,8 +1,7 @@
 ﻿using Christmas.Secret.Gifter.Domain;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Christmas.Secret.Gifter.Infrastructure.Entities
-{
+namespace MSSql.Infrastructure.Entities {
     public class EventEntry
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

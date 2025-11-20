@@ -1,9 +1,8 @@
-﻿using Christmas.Secret.Gifter.Infrastructure.Repositories;
-using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using MSSql.Infrastructure.Repositories;
+using MSSql.Infrastructure.Repositories.Abstractions;
 
-namespace Christmas.Secret.Gifter.Infrastructure.Extensions
-{
+namespace MSSql.Infrastructure.Extensions {
     public static class IServiceCollectionExtension
     {
         public static IServiceCollection AddSQLLiteDatabase(this IServiceCollection services)

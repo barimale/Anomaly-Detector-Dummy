@@ -1,10 +1,10 @@
 ﻿using AutoMapper.Configuration;
-using Christmas.Secret.Gifter.Infrastructure.Repositories;
-using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MSSql.Infrastructure.Repositories;
+using MSSql.Infrastructure.Repositories.Abstractions;
 
-namespace Christmas.Secret.Gifter.Infrastructure;
+namespace MSSql.Infrastructure;
 public static class DependencyInjection
 {
     public static IServiceCollection AddMSSQLServices

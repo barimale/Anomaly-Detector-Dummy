@@ -1,12 +1,11 @@
-﻿using Albergue.Administrator.HostedServices.Hub;
-using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Albergue.Administrator.HostedServices {
+namespace UploadStreamToQuestDB.API.Hub.HostedService {
     public class LocalesHostedService : IHostedService {
         private readonly ILogger<LocalesHostedService> _logger;
         private readonly PubSub.Hub _hub;

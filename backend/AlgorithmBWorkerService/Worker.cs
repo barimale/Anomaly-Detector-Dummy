@@ -1,11 +1,11 @@
-using AlgorithmAWorkerService.Service;
-using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
+using Algorithm.B.WorkerService.Service;
 using Common.RabbitMQ;
+using Common.RabbitMQ.Model;
+using MSSql.Infrastructure.Repositories.Abstractions;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
-using UploadStreamToQuestDB.API.Controllers;
 
-namespace AlgorithmWorkerService {
+namespace Algorithm.B.WorkerService {
     public class Worker : BackgroundService {
         private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _scopeFactory;

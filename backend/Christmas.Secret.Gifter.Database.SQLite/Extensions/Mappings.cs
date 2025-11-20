@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
 using Christmas.Secret.Gifter.Domain;
-using Christmas.Secret.Gifter.Infrastructure.Entities;
+using MSSql.Infrastructure.Entities;
 
-namespace Christmas.Secret.Gifter.Infrastructure.Extensions
-{
+namespace MSSql.Infrastructure.Extensions {
     public class Mappings : Profile
     {
         public Mappings()

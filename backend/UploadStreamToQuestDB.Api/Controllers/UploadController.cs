@@ -1,20 +1,20 @@
-using System;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+using Common.RabbitMQ;
+using Common.RabbitMQ.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Annotations;
+using System;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
 using UploadStream;
 using UploadStreamToQuestDB.API.CustomAttributes;
 using UploadStreamToQuestDB.API.Exceptions;
 using UploadStreamToQuestDB.API.SwaggerFilters;
 using UploadStreamToQuestDB.Application;
 using UploadStreamToQuestDB.Domain;
-using Common.RabbitMQ;
-using System.Text.Json;
-using PubSub;
 
 namespace UploadStreamToQuestDB.API.Controllers {
     /// <summary>
@@ -26,7 +26,7 @@ namespace UploadStreamToQuestDB.API.Controllers {
         private readonly ILogger<UploadController> _logger;
         private readonly IUploadPipeline _pipeline;
         private readonly IQueueService queueService;
-        private readonly Hub _hub;
+        private readonly PubSub.Hub _hub;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadController"/> class.
@@ -40,7 +40,7 @@ namespace UploadStreamToQuestDB.API.Controllers {
             _logger = logger;
             _pipeline = pipeline;
             this.queueService = queueService;
-            this._hub = Hub.Default;
+            this._hub = PubSub.Hub.Default;
         }
 
         /// <summary>

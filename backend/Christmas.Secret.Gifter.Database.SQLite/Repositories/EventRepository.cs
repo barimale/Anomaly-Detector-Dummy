@@ -1,12 +1,10 @@
 ﻿using AutoMapper;
-using Christmas.Secret.Gifter.Infrastructure;
-using Christmas.Secret.Gifter.Infrastructure.Entities;
-using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using MSSql.Infrastructure.Entities;
+using MSSql.Infrastructure.Repositories.Abstractions;
 
-namespace Christmas.Secret.Gifter.Infrastructure.Repositories
-{
+namespace MSSql.Infrastructure.Repositories {
     internal class EventRepository : IEventRepository
     {
         private readonly IMapper _mapper;

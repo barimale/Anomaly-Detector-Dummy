@@ -2,8 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Christmas.Secret.Gifter.Infrastructure.EntityConfigurations
-{
+namespace MSSql.Infrastructure.EntityConfigurations {
     public class IdentityUserEntryConfiguration : IEntityTypeConfiguration<IdentityUser>
     {
         public void Configure(EntityTypeBuilder<IdentityUser> builder)

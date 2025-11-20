@@ -11,8 +11,8 @@ using UploadStreamToQuestDB.API.Middlewares.GlobalExceptions.Handler;
 using UploadStreamToQuestDB.API.SwaggerFilters;
 using UploadStreamToQuestDB.Application;
 using UploadStreamToQuestDB.Infrastructure;
-using Albergue.Administrator.HostedServices.Hub;
-using Albergue.Administrator.HostedServices;
+using UploadStreamToQuestDB.API.Hub.HostedService;
+using UploadStreamToQuestDB.API.Hub;
 
 namespace UploadStreamToQuestDB.API {
     public class Startup {

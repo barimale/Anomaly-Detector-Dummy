@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace Christmas.Secret.Gifter.Infrastructure
-{
+namespace MSSql.Infrastructure {
     /* For migrations generation only */
 
     public class GifterDbContextFactory : IDesignTimeDbContextFactory<GifterDbContext>

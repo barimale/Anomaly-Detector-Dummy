@@ -1,7 +1,6 @@
-﻿using Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions.Scoped;
+﻿using MSSql.Infrastructure.Repositories.Abstractions.Scoped;
 
-namespace Christmas.Secret.Gifter.Infrastructure.Repositories.Abstractions
-{
+namespace MSSql.Infrastructure.Repositories.Abstractions {
     public interface IBaseRepository<T, U> : IBaseRepositoryInnerScope<T, U>, IBaseRepositoryOuterScope<T, U>
         where T : class
         where U : class

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Albergue.Administrator.HostedServices.Hub
-{
+namespace UploadStreamToQuestDB.API.Hub {
     //[Authorize]
     public class LocalesStatusHub : Microsoft.AspNetCore.SignalR.Hub<ILocalesStatusHub>
     {
@@ -13,7 +12,7 @@ namespace Albergue.Administrator.HostedServices.Hub
             return base.OnConnectedAsync();
         }
 
-        public override Task OnDisconnectedAsync(Exception? exception)
+        public override Task OnDisconnectedAsync(Exception exception)
         {
             Console.WriteLine(Context.ConnectionId + " is disconnected");
 

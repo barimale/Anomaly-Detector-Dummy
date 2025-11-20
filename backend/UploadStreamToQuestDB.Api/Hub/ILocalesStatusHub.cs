@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Albergue.Administrator.HostedServices.Hub
-{
+namespace UploadStreamToQuestDB.API.Hub {
     public interface ILocalesStatusHub
     {
         Task OnStartAsync(string id);

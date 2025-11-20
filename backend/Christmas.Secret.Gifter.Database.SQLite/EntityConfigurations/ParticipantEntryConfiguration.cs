@@ -1,10 +1,9 @@
-﻿using Christmas.Secret.Gifter.Infrastructure.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using MSSql.Infrastructure.Entities;
 
-namespace Christmas.Secret.Gifter.Infrastructure.EntityConfigurations
-{
+namespace MSSql.Infrastructure.EntityConfigurations {
     public class ParticipantEntryConfiguration : IEntityTypeConfiguration<ParticipantEntry>
     {
         public void Configure(EntityTypeBuilder<ParticipantEntry> builder)

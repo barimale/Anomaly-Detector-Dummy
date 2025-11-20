@@ -1,9 +1,8 @@
-﻿using Christmas.Secret.Gifter.Infrastructure.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using MSSql.Infrastructure.Entities;
 
-namespace Christmas.Secret.Gifter.Infrastructure.EntityConfigurations
-{
+namespace MSSql.Infrastructure.EntityConfigurations {
     public class EventEntryConfiguration : IEntityTypeConfiguration<EventEntry>
     {
         public void Configure(EntityTypeBuilder<EventEntry> builder)

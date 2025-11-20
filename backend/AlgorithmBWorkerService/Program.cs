@@ -1,8 +1,8 @@
-using AlgorithmAWorkerService.Service;
-using Christmas.Secret.Gifter.Infrastructure;
+using Algorithm.B.WorkerService.Service;
 using Common.RabbitMQ;
+using MSSql.Infrastructure;
 
-namespace AlgorithmWorkerService {
+namespace Algorithm.B.WorkerService {
     public class Program {
         public static void Main(string[] args) {
             var builder = Host.CreateApplicationBuilder(args);
