@@ -109,14 +109,6 @@ namespace UploadStreamToQuestDB.API.Controllers {
 
                 return BadRequest(problem);
             } else {
-                // zapisz do bazy guida
-                //using var scope = _scopeFactory.CreateScope();
-                //var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
-
-                //var result = await repo.AddAsync(new EventEntry() {
-                //    Id = files.SessionId,
-                //});
-
                 var algorithmA = new AlgorithmDetailsA() {
                     Id = Guid.NewGuid().ToString(),
                     SessionId = files.SessionId

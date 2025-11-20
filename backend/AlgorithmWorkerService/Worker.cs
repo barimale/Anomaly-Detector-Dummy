@@ -1,4 +1,3 @@
-using Algorithm.A.WorkerService.Service;
 using Common.RabbitMQ;
 using Common.RabbitMQ.Model;
 using MSSql.Infrastructure.Entities;
@@ -28,10 +27,13 @@ namespace Algorithm.A.WorkerService {
 
                 if (obj != null)
                 {
-                    // execute algorith A here
+                    // execute algorithm A here
+                    // get data from questDB for specific sessionId
+
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 
+                    // zrobic zapis do bazy AlgorithmDetailsB
                     var result = await repo.AddAsync(new EventEntry() {
                         Id = Guid.NewGuid().ToString()
                     }, cancellationToken);

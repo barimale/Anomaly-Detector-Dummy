@@ -29,7 +29,7 @@ namespace Algorithm.C.WorkerService {
 
 
                 if (obj != null) {
-                    // execute algorith A here
+                    // execute algorithm C here
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 

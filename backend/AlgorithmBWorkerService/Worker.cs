@@ -28,7 +28,7 @@ namespace Algorithm.B.WorkerService {
                 var obj = JsonSerializer.Deserialize<AlgorithmDetailsB>(body);
 
                 if (obj != null) {
-                    // execute algorith A here
+                    // execute algorithm B here
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 
