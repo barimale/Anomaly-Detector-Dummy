@@ -2,12 +2,16 @@ using Common.RabbitMQ;
 using Common.RabbitMQ.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MSSql.Infrastructure.Entities;
+using MSSql.Infrastructure.Repositories.Abstractions;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using UploadStream;
 using UploadStreamToQuestDB.API.CustomAttributes;
@@ -26,6 +30,8 @@ namespace UploadStreamToQuestDB.API.Controllers {
         private readonly ILogger<UploadController> _logger;
         private readonly IUploadPipeline _pipeline;
         private readonly IQueueService queueService;
+        //private readonly IServiceScopeFactory _scopeFactory;
+        //private readonly IEventRepository eventRepository;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadController"/> class.
@@ -39,6 +45,7 @@ namespace UploadStreamToQuestDB.API.Controllers {
             _logger = logger;
             _pipeline = pipeline;
             this.queueService = queueService;
+            //this.eventRepository = eventRepository;
         }
 
         /// <summary>
@@ -103,18 +110,24 @@ namespace UploadStreamToQuestDB.API.Controllers {
                 return BadRequest(problem);
             } else {
                 // zapisz do bazy guida
+                //using var scope = _scopeFactory.CreateScope();
+                //var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+
+                //var result = await repo.AddAsync(new EventEntry() {
+                //    Id = files.SessionId,
+                //});
 
                 var algorithmA = new AlgorithmDetailsA() {
                     Id = Guid.NewGuid().ToString(),
                     SessionId = files.SessionId + "A"
                 };
                 string msgA = JsonSerializer.Serialize(algorithmA);
-                var algorithmB = new AlgorithmDetailsA() {
+                var algorithmB = new AlgorithmDetailsB() {
                     Id = Guid.NewGuid().ToString(),
                     SessionId = files.SessionId + "B"
                 };
                 string msgB = JsonSerializer.Serialize(algorithmB);
-                var algorithmC = new AlgorithmDetailsA() {
+                var algorithmC = new AlgorithmDetailsC() {
                     Id = Guid.NewGuid().ToString(),
                     SessionId = files.SessionId + "C"
                 };

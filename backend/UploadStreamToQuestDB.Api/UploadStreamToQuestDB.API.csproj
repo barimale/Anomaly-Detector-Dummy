@@ -25,6 +25,7 @@
 
 
     <ItemGroup>
+      <ProjectReference Include="..\Christmas.Secret.Gifter.Database.SQLite\MSSql.Infrastructure.csproj" />
       <ProjectReference Include="..\Common.RabbitMQ\Common.RabbitMQ.csproj" />
       <ProjectReference Include="..\UploadStreamToQuestDB.Application\UploadStreamToQuestDB.Application.csproj" />
       <ProjectReference Include="..\UploadStreamToQuestDB.Infrastructure\UploadStreamToQuestDB.Infrastructure.csproj" />

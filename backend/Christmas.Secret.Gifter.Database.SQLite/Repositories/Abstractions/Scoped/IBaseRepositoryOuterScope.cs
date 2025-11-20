@@ -3,7 +3,7 @@
         where T : class
         where U : class
     {
-        Task<T> AddAsync(T item, CancellationToken cancellationToken);
-        Task<T> GetByIdAsync(U id, CancellationToken cancellationToken);
+        Task<T> AddAsync(T item, CancellationToken cancellationToken = default);
+        Task<T> GetByIdAsync(U id, CancellationToken cancellationToken = default);
     }
 }
