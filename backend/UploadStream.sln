@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.B.WorkerService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.C.WorkerService", "AlgorithmCWorkerService\Algorithm.C.WorkerService.csproj", "{234090DB-0EBF-1713-8697-378DA4706552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Common", "Algorithm.Common\Algorithm.Common.csproj", "{9279204E-18D0-42F1-9892-06F8CC3A647F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,18 @@ Global
 		{234090DB-0EBF-1713-8697-378DA4706552}.Release|x64.Build.0 = Release|Any CPU
 		{234090DB-0EBF-1713-8697-378DA4706552}.Release|x86.ActiveCfg = Release|Any CPU
 		{234090DB-0EBF-1713-8697-378DA4706552}.Release|x86.Build.0 = Release|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Debug|x64.Build.0 = Debug|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Debug|x86.Build.0 = Debug|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x64.ActiveCfg = Release|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x64.Build.0 = Release|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x86.ActiveCfg = Release|Any CPU
+		{9279204E-18D0-42F1-9892-06F8CC3A647F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
