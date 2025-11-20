@@ -24,6 +24,7 @@
 
 
     <ItemGroup>
+      <ProjectReference Include="..\Common.RabbitMQ\Common.RabbitMQ.csproj" />
       <ProjectReference Include="..\UploadStreamToQuestDB.Application\UploadStreamToQuestDB.Application.csproj" />
       <ProjectReference Include="..\UploadStreamToQuestDB.Infrastructure\UploadStreamToQuestDB.Infrastructure.csproj" />
     </ItemGroup>

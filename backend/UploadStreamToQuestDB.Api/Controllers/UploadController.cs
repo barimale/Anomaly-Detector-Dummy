@@ -12,6 +12,8 @@ using UploadStreamToQuestDB.API.Exceptions;
 using UploadStreamToQuestDB.API.SwaggerFilters;
 using UploadStreamToQuestDB.Application;
 using UploadStreamToQuestDB.Domain;
+using Common.RabbitMQ;
+using System.Text.Json;
 
 namespace UploadStreamToQuestDB.API.Controllers {
     /// <summary>
@@ -22,6 +24,7 @@ namespace UploadStreamToQuestDB.API.Controllers {
     public class UploadController : Controller {
         private readonly ILogger<UploadController> _logger;
         private readonly IUploadPipeline _pipeline;
+        private readonly IQueueService queueService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadController"/> class.
@@ -30,9 +33,11 @@ namespace UploadStreamToQuestDB.API.Controllers {
         /// <param name="pipeline">The upload pipeline.</param>
         public UploadController(
             ILogger<UploadController> logger,
-            IUploadPipeline pipeline) {
+            IUploadPipeline pipeline,
+            IQueueService queueService) {
             _logger = logger;
             _pipeline = pipeline;
+            this.queueService = queueService;
         }
 
         /// <summary>
@@ -97,9 +102,16 @@ namespace UploadStreamToQuestDB.API.Controllers {
                 return BadRequest(problem);
             } else {
 
-                // wyslij rabbitMQ na n algorytmow
                 // zapisz do bazy te wyslania
+
                 // zapisz do bazy guida
+
+                var algorithm = new AlgorithmDetails() {
+                    Id = Guid.NewGuid().ToString(),
+                    SessionId = files.SessionId
+                };
+                string msg = JsonSerializer.Serialize(algorithm);
+                await queueService.Publish(msg);
 
                 return Ok(new {
                     files.SessionId,

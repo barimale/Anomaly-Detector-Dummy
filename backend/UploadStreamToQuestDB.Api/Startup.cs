@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Questdb.Net;
 using Serilog;
 using System;
+using Common.RabbitMQ;
 using UploadStreamToQuestDB.API.Middlewares.GlobalExceptions.Handler;
 using UploadStreamToQuestDB.API.SwaggerFilters;
 using UploadStreamToQuestDB.Application;
@@ -30,6 +31,7 @@ namespace UploadStreamToQuestDB.API {
             services.AddQuestDb(Configuration["ReadQuestDbAddress"]);
             services.AddInfrastructureDependencies(Configuration);
             services.AddApplicationDependencies(Configuration);
+            services.AddRabbitMQServices();
 
             services.Configure<FormOptions>(x => {
                 x.ValueLengthLimit = int.MaxValue;
