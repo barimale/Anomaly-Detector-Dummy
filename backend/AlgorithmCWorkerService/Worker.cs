@@ -10,14 +10,13 @@ namespace Algorithm.C.WorkerService {
     public class Worker : BackgroundService {
         private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _scopeFactory;
-        private readonly IML executorService;
+        //private readonly IML executorService;
 
         public Worker(ILogger<Worker> logger,
-            IServiceScopeFactory _scopeFactory,
-            IML executorService) {
+            IServiceScopeFactory _scopeFactory) {
             _logger = logger;
             this._scopeFactory = _scopeFactory;
-            this.executorService = executorService;
+            //this.executorService = executorService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken) {
@@ -28,12 +27,16 @@ namespace Algorithm.C.WorkerService {
                 var body = ea.Body.ToArray();
                 var obj = JsonSerializer.Deserialize<AlgorithmDetailsC>(body);
 
-                using var scope = _scopeFactory.CreateScope();
-                var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 
-                var result = await repo.AddAsync(new EventEntry() {
-                    Id = Guid.NewGuid().ToString()
-                }, cancellationToken);
+                if (obj != null) {
+                    // execute algorith A here
+                    using var scope = _scopeFactory.CreateScope();
+                    var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+
+                    var result = await repo.AddAsync(new EventEntry() {
+                        Id = Guid.NewGuid().ToString()
+                    }, cancellationToken);
+                }
             };
 
             using var scope = _scopeFactory.CreateScope();

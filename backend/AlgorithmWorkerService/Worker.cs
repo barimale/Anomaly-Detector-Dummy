@@ -10,14 +10,13 @@ namespace Algorithm.A.WorkerService {
     public class Worker : BackgroundService {
         private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _scopeFactory;
-        private readonly IML executorService;
+        //private readonly IML executorService;
 
         public Worker(ILogger<Worker> logger,
-            IServiceScopeFactory _scopeFactory,
-            IML executorService) {
+            IServiceScopeFactory _scopeFactory) {
             _logger = logger;
             this._scopeFactory = _scopeFactory;
-            this.executorService = executorService;
+            //this.executorService = executorService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken) {
