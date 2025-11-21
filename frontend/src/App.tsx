@@ -8,7 +8,7 @@ const App: React.FC = () => {
   const [messageLengthOver0, setMessageLengthOver0] = useState<boolean>(false);
   const [localesInProgress, setLocalesInProgress] = useState<boolean | null>(null);
   const options: IHttpConnectionOptions = {
-    withCredentials: false,
+    withCredentials: false
   };
   const connection = new HubConnectionBuilder()
     .withUrl(`http://localhost:53654/localesHub`, options)
@@ -19,13 +19,13 @@ const App: React.FC = () => {
   connection.on('OnFinishAsync', (id: string) => {
     console.log(`${id} finished.`);
     // alert(`${id} finished.`);
-    setLocalesInProgress(false);
+    setLocalesInProgress(() => false);
   });
 
   connection.on('OnStartAsync', (id: string) => {
     console.log(`${id} started.`);
         // alert(`${id} started.`);
-    setLocalesInProgress(true);
+    setLocalesInProgress(() => true);
   });
 
   useEffect(() => {

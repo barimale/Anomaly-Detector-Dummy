@@ -11,7 +11,6 @@ const upload = (file: File, onUploadProgress: (progressEvent: any) => void): Pro
     headers: {
       "Content-Type": "multipart/form-data",
       "Accept": "*/*",
-      "User-Agent": "react-app",
       "X-SessionId": id
     },
     onUploadProgress,
@@ -20,7 +19,6 @@ const upload = (file: File, onUploadProgress: (progressEvent: any) => void): Pro
     headers: {
       "Content-Type": "multipart/form-data",
       "Accept": "*/*",
-      "User-Agent": "react-app",
       "X-SessionId": id
     },
   })})

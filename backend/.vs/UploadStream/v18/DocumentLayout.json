@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "R:\\Anomaly-Detector-Dummy4\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{234090DB-0EBF-1713-8697-378DA4706552}|AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmcworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234090DB-0EBF-1713-8697-378DA4706552}|AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj|solutionrelative:algorithmcworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -32,31 +36,44 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Worker.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmCWorkerService\\Worker.cs",
+              "RelativeDocumentMoniker": "AlgorithmCWorkerService\\Worker.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmCWorkerService\\Worker.cs",
+              "RelativeToolTip": "AlgorithmCWorkerService\\Worker.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T15:03:53.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Worker.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
               "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
               "RelativeToolTip": "AlgorithmWorkerService\\Worker.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAvwDoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAvwDoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T15:03:53.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BackgroundNotifier.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
               "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
               "RelativeToolTip": "UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAvwCEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAvwCgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T15:03:54.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DataController.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Controllers\\DataController.cs",
               "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Controllers\\DataController.cs",
@@ -69,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UploadController.cs",
               "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
               "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",

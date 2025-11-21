@@ -29,12 +29,14 @@ namespace Algorithm.C.WorkerService {
                 var obj = JsonSerializer.Deserialize<AlgorithmDetailsC>(body);
 
 
-                if (obj != null)    {
+                if (obj != null && obj is AlgorithmDetailsC)    {
                     // execute algorithm C here
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
+                    Random random = new Random();
 
-                    var quest = scope.ServiceProvider.GetRequiredService<IQuestDBClient>();
+                    var next = random.Next(0, 10);
+                    var algorithmResult = next > 5;
 
                     var result = await repo.AddAsync(new EventEntry() {
                         Id = Guid.NewGuid().ToString()
