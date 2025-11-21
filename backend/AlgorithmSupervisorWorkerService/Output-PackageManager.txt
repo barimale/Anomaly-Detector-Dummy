@@ -1,0 +1,16 @@
+﻿Restoring packages for R:\Anomaly-Detector-Dummy4\backend\Common.UTs\Common.UTs.csproj...
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2025.11.19.23.31.42/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2025.11.19.23.31.42/2025.11.21.11.31.46/vulnerability.update.json
+Installing NuGet package Microsoft.ML.TimeSeries 5.0.0.
+Writing assets file to disk. Path: R:\Anomaly-Detector-Dummy4\backend\Common.UTs\obj\project.assets.json
+Successfully installed 'Microsoft.ML.Mkl.Redist 5.0.0' to Common.UTs
+Successfully installed 'Microsoft.ML.TimeSeries 5.0.0' to Common.UTs
+Executing nuget actions took 63 ms
+Time Elapsed: 00:00:00.2602403
+========== Finished ==========
+
+Time Elapsed: 00:00:00.0080491
+========== Finished ==========
+
+

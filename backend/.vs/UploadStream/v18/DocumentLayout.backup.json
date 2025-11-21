@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "R:\\Anomaly-Detector-Dummy4\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\datastructures\\productsalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\datastructures\\productsalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy4\\backend\\uploadstreamtoquestdb.api\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\datastructures\\productsalesprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\datastructures\\productsalesprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy4\\backend\\uploadstreamtoquestdb.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\ml\\productsalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\ml\\productsalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}|Common.UTs\\Common.UTs.csproj|r:\\anomaly-detector-dummy4\\backend\\common.uts\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}|Common.UTs\\Common.UTs.csproj|solutionrelative:common.uts\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}|Common.UTs\\Common.UTs.csproj|r:\\anomaly-detector-dummy4\\backend\\common.uts\\datacreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085E3B5A-34A8-4C9E-9531-8A2ECECAAB9D}|Common.UTs\\Common.UTs.csproj|solutionrelative:common.uts\\datacreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{234090DB-0EBF-1713-8697-378DA4706552}|AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmcworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{234090DB-0EBF-1713-8697-378DA4706552}|AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj|solutionrelative:algorithmcworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|r:\\anomaly-detector-dummy4\\backend\\uploadstreamtoquestdb.api\\hub\\hostedservice\\backgroundnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79B428B2-FAFC-4E01-8E68-C6A6C67B24C7}|UploadStreamToQuestDB.Api\\UploadStreamToQuestDB.API.csproj|solutionrelative:uploadstreamtoquestdb.api\\hub\\hostedservice\\backgroundnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\ml\\productsalesprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\ml\\productsalesprediction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Common.UTs\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "Common.UTs\\UnitTest1.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Common.UTs\\UnitTest1.cs",
-              "RelativeToolTip": "Common.UTs\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T16:34:13.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmCWorkerService\\Worker.cs",
-              "RelativeDocumentMoniker": "AlgorithmCWorkerService\\Worker.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmCWorkerService\\Worker.cs",
-              "RelativeToolTip": "AlgorithmCWorkerService\\Worker.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T15:03:53.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
-              "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
-              "RelativeToolTip": "AlgorithmWorkerService\\Worker.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAnwDEAAABdAAAAAAAAAA==",
+              "Title": "ProductSalesData.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\DataStructures\\ProductSalesData.cs",
+              "RelativeDocumentMoniker": "Algorithm.Common\\DataStructures\\ProductSalesData.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\DataStructures\\ProductSalesData.cs",
+              "RelativeToolTip": "Algorithm.Common\\DataStructures\\ProductSalesData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T15:03:53.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BackgroundNotifier.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
-              "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
-              "RelativeToolTip": "UploadStreamToQuestDB.Api\\Hub\\HostedService\\BackgroundNotifier.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAvwCgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T15:03:54.013Z",
+              "WhenOpened": "2025-11-21T17:09:50.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataController.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Controllers\\DataController.cs",
-              "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Controllers\\DataController.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Controllers\\DataController.cs",
-              "RelativeToolTip": "UploadStreamToQuestDB.Api\\Controllers\\DataController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwDcAAABRAAAAAAAAAA==",
+              "Title": "ProductSalesPrediction.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\DataStructures\\ProductSalesPrediction.cs",
+              "RelativeDocumentMoniker": "Algorithm.Common\\DataStructures\\ProductSalesPrediction.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\DataStructures\\ProductSalesPrediction.cs",
+              "RelativeToolTip": "Algorithm.Common\\DataStructures\\ProductSalesPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T15:01:08.61Z",
+              "WhenOpened": "2025-11-21T17:09:49.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UploadController.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
-              "RelativeDocumentMoniker": "UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
-              "RelativeToolTip": "UploadStreamToQuestDB.Api\\Controllers\\UploadController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAvwDwAAAAMAAAAAAAAAA==",
+              "Title": "ProductSalesData.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\ProductSalesData.cs",
+              "RelativeDocumentMoniker": "Algorithm.Common\\ML\\ProductSalesData.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\ProductSalesData.cs",
+              "RelativeToolTip": "Algorithm.Common\\ML\\ProductSalesData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T15:00:54.549Z",
+              "WhenOpened": "2025-11-21T17:09:30.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductSalesPrediction.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\ProductSalesPrediction.cs",
+              "RelativeDocumentMoniker": "Algorithm.Common\\ML\\ProductSalesPrediction.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\ProductSalesPrediction.cs",
+              "RelativeToolTip": "Algorithm.Common\\ML\\ProductSalesPrediction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:08:53.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataCreator.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Common.UTs\\DataCreator.cs",
+              "RelativeDocumentMoniker": "Common.UTs\\DataCreator.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Common.UTs\\DataCreator.cs",
+              "RelativeToolTip": "Common.UTs\\DataCreator.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwEkAAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:07:30.683Z",
               "EditorCaption": ""
             }
           ]

@@ -1,7 +1,9 @@
 ﻿using Microsoft.ML.Data;
 
-namespace Algorithm.Common.ML {
-    public class ProductSalesData {
+namespace SpikeDetection.WinFormsTrainer
+{
+    public class ProductSalesData
+    {
         [LoadColumn(0)]
         public string Month;
 
