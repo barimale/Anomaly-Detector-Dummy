@@ -12,6 +12,8 @@ using UploadStreamToQuestDB.Infrastructure.Utilities;
 
 namespace Algorithm.A.WorkerService {
     public class Worker : BackgroundService {
+        private const string path = @"R:/SolutionA/ProductSalesSpikeModel.zip";
+
         private readonly ILogger<Worker> _logger;
         private readonly IServiceScopeFactory _scopeFactory;
 
@@ -52,7 +54,7 @@ namespace Algorithm.A.WorkerService {
                         _logger.LogTrace("Data is downloaded.");
 
                         var ml = scope.ServiceProvider.GetService<ICustomMlContext>();
-                        ml.DetectAnomaliesBySpike(dataModel.ToList(), string.Empty);
+                        ml.DetectAnomaliesBySpike(dataModel.ToList(), path);
                         // zrobic zapis do bazy AlgorithmDetailsB
                         var result = await repo.AddAsync(new EventEntry() {
                             Id = Guid.NewGuid().ToString()

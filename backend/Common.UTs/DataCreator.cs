@@ -63,7 +63,6 @@ namespace Common.UTs {
 
             SaveModel(mlContext, trainedSpikeModel, SpikeModelPath, dataView);
             SaveModel(mlContext, trainedChangePointModel, ChangePointModelPath, dataView);
-
         }
 
         private static ITransformer DetectSpike(int size, IDataView dataView) {
