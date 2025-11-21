@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmworkerservice\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\ml\\custommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\ml\\custommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\ml\\icustommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\ml\\icustommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaginationRequest.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\PaginationRequest.cs",
-              "RelativeDocumentMoniker": "AlgorithmWorkerService\\PaginationRequest.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\PaginationRequest.cs",
-              "RelativeToolTip": "AlgorithmWorkerService\\PaginationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ICustomMlContext.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\ICustomMlContext.cs",
+              "RelativeDocumentMoniker": "Algorithm.Common\\ML\\ICustomMlContext.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\ICustomMlContext.cs",
+              "RelativeToolTip": "Algorithm.Common\\ML\\ICustomMlContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:52:04.274Z",
+              "WhenOpened": "2025-11-21T11:56:56.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomMlContext.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\CustomMlContext.cs",
+              "RelativeDocumentMoniker": "Algorithm.Common\\ML\\CustomMlContext.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ML\\CustomMlContext.cs",
+              "RelativeToolTip": "Algorithm.Common\\ML\\CustomMlContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T11:56:13.543Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +58,7 @@
               "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
               "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
               "RelativeToolTip": "AlgorithmWorkerService\\Worker.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T11:51:01.698Z",
               "EditorCaption": ""

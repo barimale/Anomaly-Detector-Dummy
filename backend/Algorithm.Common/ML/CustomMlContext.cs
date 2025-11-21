@@ -1,15 +1,16 @@
-﻿using Microsoft.ML;
+﻿using Algorithm.Common.Model;
+using Microsoft.ML;
 
 namespace Algorithm.Common.ML
 {
     public class CustomMlContext : ICustomMlContext
     {
-        public bool DetectAnomaliesBySpike(IList<ProductSalesData> dataFromDatabase, string modelPath) {
+        public bool DetectAnomaliesBySpike(IList<WeatherDataResult> dataFromDatabase, string modelPath) {
             // Create MLContext to be shared across the model creation workflow objects.
             var mlcontext = new MLContext();
 
             // STEP 1: Load the data into IDataView.
-            IDataView dataView = mlcontext.Data.LoadFromEnumerable<ProductSalesData>(dataFromDatabase);
+            IDataView dataView = mlcontext.Data.LoadFromEnumerable<WeatherDataResult>(dataFromDatabase);
 
             ITransformer tansformedModel = mlcontext.Model.Load(modelPath, out var modelInputSchema);
 
@@ -20,12 +21,12 @@ namespace Algorithm.Common.ML
             return predictions.Any();
         }
 
-        public bool DetectAnomaliesBychangePoint(IList<ProductSalesData> dataFromDatabase, string modelPath) {
+        public bool DetectAnomaliesBychangePoint(IList<WeatherDataResult> dataFromDatabase, string modelPath) {
             // Create MLContext to be shared across the model creation workflow objects.
             var mlcontext = new MLContext();
 
             // STEP 1: Load the data into IDataView.
-            IDataView dataView = mlcontext.Data.LoadFromEnumerable<ProductSalesData>(dataFromDatabase);
+            IDataView dataView = mlcontext.Data.LoadFromEnumerable<WeatherDataResult>(dataFromDatabase);
 
             ITransformer tansformedModel = mlcontext.Model.Load(modelPath, out var modelInputSchema);
 

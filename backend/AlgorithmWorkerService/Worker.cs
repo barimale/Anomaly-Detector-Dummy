@@ -1,4 +1,5 @@
 using Algorithm.Common.ML;
+using Algorithm.Common.Model;
 using Common.RabbitMQ;
 using Common.RabbitMQ.Model;
 using MSSql.Infrastructure.Entities;
@@ -51,7 +52,7 @@ namespace Algorithm.A.WorkerService {
                         _logger.LogTrace("Data is downloaded.");
 
                         var ml = scope.ServiceProvider.GetService<ICustomMlContext>();
-                        ml.DetectAnomaliesBySpike();
+                        ml.DetectAnomaliesBySpike(dataModel.ToList(), string.Empty);
                         // zrobic zapis do bazy AlgorithmDetailsB
                         var result = await repo.AddAsync(new EventEntry() {
                             Id = Guid.NewGuid().ToString()

@@ -1,6 +1,9 @@
-﻿namespace Algorithm.Common.ML {
+﻿
+using Algorithm.Common.Model;
+
+namespace Algorithm.Common.ML {
     public interface ICustomMlContext {
-        bool DetectAnomaliesBychangePoint(IList<ProductSalesData> dataFromDatabase, string modelPath);
-        bool DetectAnomaliesBySpike(IList<ProductSalesData> dataFromDatabase, string modelPath);
+        bool DetectAnomaliesBychangePoint(IList<WeatherDataResult> dataFromDatabase, string modelPath);
+        bool DetectAnomaliesBySpike(IList<WeatherDataResult> dataFromDatabase, string modelPath);
     }
 }
