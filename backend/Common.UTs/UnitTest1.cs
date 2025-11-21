@@ -3,7 +3,9 @@
         [Fact]
         public void Test1() {
             //given
-
+            // wczytaj plik
+            // zrob model
+            // zapisz model bezposrednio na dysku R
             //when
 
             //then
