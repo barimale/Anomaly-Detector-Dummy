@@ -1,9 +1,7 @@
-using Algorithm.C.WorkerService.Service;
 using Common.RabbitMQ;
 using Common.RabbitMQ.Model;
 using MSSql.Infrastructure.Entities;
 using MSSql.Infrastructure.Repositories.Abstractions;
-using Questdb.Net;
 using RabbitMQ.Client.Events;
 using System.Text.Json;
 
@@ -36,7 +34,7 @@ namespace Algorithm.C.WorkerService {
                     Random random = new Random();
 
                     var next = random.Next(0, 10);
-                    var algorithmResult = next > 5;
+                    var wynik = next > 5;
 
                     var result = await repo.AddAsync(new EventEntry() {
                         Id = Guid.NewGuid().ToString()
