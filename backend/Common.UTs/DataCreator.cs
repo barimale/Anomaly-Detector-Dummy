@@ -1,4 +1,5 @@
 ﻿using Algorithm.Common.ML;
+using Algorithm.Common.Model;
 using Microsoft.ML;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System.Data;
@@ -32,7 +33,7 @@ namespace Common.UTs {
         }
 
         private static string BaseDatasetsRelativePath = @"../../../Data";
-        private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/Product-sales.csv";
+        private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/input_dummy.txt";
 
         private static string DatasetPath = GetAbsolutePath(DatasetRelativePath);
 
@@ -54,7 +55,7 @@ namespace Common.UTs {
 
             // Load the data into IDataView.
             // This dataset is used for detecting spikes or changes not for training.
-            IDataView dataView = mlContext.Data.LoadFromTextFile<ProductSalesData>(path: DatasetPath, hasHeader: true, separatorChar: ',');
+            IDataView dataView = mlContext.Data.LoadFromTextFile<WeatherDataResult>(path: DatasetPath, hasHeader: true, separatorChar: ',');
 
             // Detect temporary changes (spikes) in the pattern.
             ITransformer trainedSpikeModel = DetectSpike(size, dataView);
@@ -71,7 +72,7 @@ namespace Common.UTs {
             Console.WriteLine("===============Detect temporary changes in pattern===============");
 
             // STEP 1: Create Estimator.
-            var estimator = mlContext.Transforms.DetectIidSpike(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95, pvalueHistoryLength: size / 4);
+            var estimator = mlContext.Transforms.DetectIidSpike(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(WeatherDataResult.RF_10), confidence: 95, pvalueHistoryLength: size / 4);
 
             // STEP 2:The Transformed Model.
             // In IID Spike detection, we don't need to do training, we just need to do transformation. 
@@ -101,7 +102,7 @@ namespace Common.UTs {
             Console.WriteLine("===============Detect Persistent changes in pattern===============");
 
             // STEP 1: Setup transformations using DetectIidChangePoint.
-            var estimator = mlContext.Transforms.DetectIidChangePoint(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95, changeHistoryLength: size / 4);
+            var estimator = mlContext.Transforms.DetectIidChangePoint(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(WeatherDataResult.RF_10), confidence: 95, changeHistoryLength: size / 4);
 
             // STEP 2:The Transformed Model.
             // In IID Change point detection, we don't need need to do training, we just need to do transformation. 
@@ -146,7 +147,7 @@ namespace Common.UTs {
 
         private static IDataView CreateEmptyDataView() {
             //Create empty DataView. We just need the schema to call fit()
-            IEnumerable<ProductSalesData> enumerableData = new List<ProductSalesData>();
+            IEnumerable<WeatherDataResult> enumerableData = new List<WeatherDataResult>();
             var dv = mlContext.Data.LoadFromEnumerable(enumerableData);
             return dv;
         }
