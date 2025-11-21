@@ -36,6 +36,8 @@ public class BackgroundNotifier : BackgroundService {
             if (obj != null && obj is AlgorithmResult) {
                 if(obj.SolutionA && obj.SolutionB && obj.SolutionC) {
                     await _broadcastLocalesStatus.Clients.All.OnStartAsync(Guid.NewGuid().ToString());
+                } else {
+                    await _broadcastLocalesStatus.Clients.All.OnFinishAsync(Guid.NewGuid().ToString());
                 }
             }
         };
