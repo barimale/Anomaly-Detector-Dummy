@@ -5,11 +5,9 @@ import FilesUpload from "./components/FilesUpload";
 import { HubConnectionBuilder, LogLevel, IHttpConnectionOptions } from '@microsoft/signalr';
 
 const App: React.FC = () => {
-  const userToken = "adsjalksdjalkdsjadlka";//useContext(AuthContext);
   const [messageLengthOver0, setMessageLengthOver0] = useState<boolean>(false);
   const [localesInProgress, setLocalesInProgress] = useState<boolean | null>(null);
   const options: IHttpConnectionOptions = {
-    accessTokenFactory: () => `${userToken}`,
     withCredentials: false,
   };
   const connection = new HubConnectionBuilder()
