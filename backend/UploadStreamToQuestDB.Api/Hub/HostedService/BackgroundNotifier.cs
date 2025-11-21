@@ -34,10 +34,12 @@ public class BackgroundNotifier : BackgroundService {
             var obj = JsonSerializer.Deserialize<AlgorithmResult>(body);
 
             if (obj != null && obj is AlgorithmResult) {
-                if(obj.SolutionA && obj.SolutionB && obj.SolutionC) {
-                    await _broadcastLocalesStatus.Clients.All.OnStartAsync(Guid.NewGuid().ToString());
-                } else {
+                if(obj.Result) {
+                    // jesli anomalia wystepuje
                     await _broadcastLocalesStatus.Clients.All.OnFinishAsync(Guid.NewGuid().ToString());
+                } else {
+                    // jesli anomalia nie wystepuje
+                    await _broadcastLocalesStatus.Clients.All.OnStartAsync(Guid.NewGuid().ToString());
                 }
             }
         };
