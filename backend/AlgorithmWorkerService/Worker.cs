@@ -54,7 +54,7 @@ namespace Algorithm.A.WorkerService {
                         _logger.LogTrace("Data is downloaded.");
 
                         var ml = scope.ServiceProvider.GetService<ICustomMlContext>();
-                        ml.DetectAnomaliesBySpike(dataModel.ToList(), path);
+                        var wynik = ml.DetectAnomaliesBySpike(dataModel.ToList(), path);
                         // zrobic zapis do bazy AlgorithmDetailsB
                         var result = await repo.AddAsync(new EventEntry() {
                             Id = Guid.NewGuid().ToString()

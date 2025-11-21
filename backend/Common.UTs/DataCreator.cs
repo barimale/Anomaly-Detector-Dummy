@@ -10,6 +10,19 @@ namespace Common.UTs {
         private const string SolutionBPath = @"R:\SolutionB";
         private const string SolutionCPath = @"R:\SolutionC";
 
+        private static string BaseDatasetsRelativePath = @"../../../Data";
+        private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/input_dummy.txt";
+
+        private static string DatasetPath = GetAbsolutePath(DatasetRelativePath);
+
+        private static string ModelRelativePath1 = $"R:/SolutionA/ProductSalesSpikeModel.zip";
+        private static string ModelRelativePath2 = $"R:/SolutionB/ProductSalesChangePointModel.zip";
+
+        private static string SpikeModelPath = ModelRelativePath1;
+        private static string ChangePointModelPath = ModelRelativePath2;
+
+        private static MLContext mlContext;
+
         [Fact]
         public void Create_folders() {
             //given
@@ -31,19 +44,6 @@ namespace Common.UTs {
             Assert.True(existsB);
             Assert.True(existsC);
         }
-
-        private static string BaseDatasetsRelativePath = @"../../../Data";
-        private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/input_dummy.txt";
-
-        private static string DatasetPath = GetAbsolutePath(DatasetRelativePath);
-
-        private static string ModelRelativePath1 = $"R:/SolutionA/ProductSalesSpikeModel.zip";
-        private static string ModelRelativePath2 = $"R:/SolutionB/ProductSalesChangePointModel.zip";
-
-        private static string SpikeModelPath = ModelRelativePath1;
-        private static string ChangePointModelPath = ModelRelativePath2;
-
-        private static MLContext mlContext;
 
         [Fact]
         public void Create_models() {
