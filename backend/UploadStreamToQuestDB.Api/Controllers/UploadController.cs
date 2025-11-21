@@ -12,9 +12,11 @@ using System.Threading.Tasks;
 using UploadStream;
 using UploadStreamToQuestDB.API.CustomAttributes;
 using UploadStreamToQuestDB.API.Exceptions;
+using UploadStreamToQuestDB.API.Model;
 using UploadStreamToQuestDB.API.SwaggerFilters;
 using UploadStreamToQuestDB.Application;
 using UploadStreamToQuestDB.Domain;
+using static System.Net.WebRequestMethods;
 
 namespace UploadStreamToQuestDB.API.Controllers {
     /// <summary>
@@ -105,26 +107,6 @@ namespace UploadStreamToQuestDB.API.Controllers {
 
                 return BadRequest(problem);
             } else {
-                var algorithmA = new AlgorithmDetailsA() {
-                    Id = Guid.NewGuid().ToString(),
-                    SessionId = files.SessionId
-                };
-                string msgA = JsonSerializer.Serialize(algorithmA);
-                var algorithmB = new AlgorithmDetailsB() {
-                    Id = Guid.NewGuid().ToString(),
-                    SessionId = files.SessionId
-                };
-                string msgB = JsonSerializer.Serialize(algorithmB);
-                var algorithmC = new AlgorithmDetailsC() {
-                    Id = Guid.NewGuid().ToString(),
-                    SessionId = files.SessionId
-                };
-                string msgC = JsonSerializer.Serialize(algorithmC);
-
-                await queueService.Publish(msgA);
-                await queueService.Publish(msgB);
-                await queueService.Publish(msgC);
-
                 return Ok(new {
                     files.SessionId,
                     files.FilePath,
@@ -142,6 +124,34 @@ namespace UploadStreamToQuestDB.API.Controllers {
                     })
                 });
             }
+        }
+
+        [HttpPost("notify")]
+        [SwaggerOperation(Summary = "Endpoint for getting data from server.")]
+        public async Task<IActionResult> NotifyAlgorithms(
+           [FromHeader(Name = "X-SessionId")] string sessionId,
+           [AsParameters] PaginationRequest request) {
+            var algorithmA = new AlgorithmDetailsA() {
+                Id = Guid.NewGuid().ToString(),
+                SessionId = sessionId
+            };
+            string msgA = JsonSerializer.Serialize(algorithmA);
+            var algorithmB = new AlgorithmDetailsB() {
+                Id = Guid.NewGuid().ToString(),
+                SessionId = sessionId
+            };
+            string msgB = JsonSerializer.Serialize(algorithmB);
+            var algorithmC = new AlgorithmDetailsC() {
+                Id = Guid.NewGuid().ToString(),
+                SessionId = sessionId
+            };
+            string msgC = JsonSerializer.Serialize(algorithmC);
+
+            await queueService.Publish(msgA);
+            await queueService.Publish(msgB);
+            await queueService.Publish(msgC);
+
+            return Ok();
         }
     }
 }
