@@ -1,4 +1,4 @@
-﻿namespace Algorithm.Common {
+﻿namespace Algorithm.Common.ML {
     public class ProductSalesData {
     }
 }

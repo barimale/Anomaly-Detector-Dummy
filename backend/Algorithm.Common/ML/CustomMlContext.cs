@@ -1,6 +1,6 @@
 ﻿using Microsoft.ML;
 
-namespace Algorithm.Common
+namespace Algorithm.Common.ML
 {
     public class CustomMlContext : ICustomMlContext
     {

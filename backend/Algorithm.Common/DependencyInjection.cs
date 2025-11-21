@@ -1,4 +1,4 @@
-﻿using Algorithm.Common;
+﻿using Algorithm.Common.ML;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Common.RabbitMQ;

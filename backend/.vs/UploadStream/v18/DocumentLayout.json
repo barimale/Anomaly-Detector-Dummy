@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "R:\\Anomaly-Detector-Dummy4\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{234090DB-0EBF-1713-8697-378DA4706552}|AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmcworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{234090DB-0EBF-1713-8697-378DA4706552}|AlgorithmCWorkerService\\Algorithm.C.WorkerService.csproj|solutionrelative:algorithmcworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE056F11-C85B-3477-8FE4-6482FE6A380D}|AlgorithmBWorkerService\\Algorithm.B.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmbworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE056F11-C85B-3477-8FE4-6482FE6A380D}|AlgorithmBWorkerService\\Algorithm.B.WorkerService.csproj|solutionrelative:algorithmbworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\icustommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\icustommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\algorithm.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\algorithm.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\custommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\custommlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithm.common\\productsalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9279204E-18D0-42F1-9892-06F8CC3A647F}|Algorithm.Common\\Algorithm.Common.csproj|solutionrelative:algorithm.common\\productsalesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|r:\\anomaly-detector-dummy4\\backend\\algorithmworkerservice\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73D086F-02E7-4D4F-958C-24D1600175FE}|AlgorithmWorkerService\\Algorithm.A.WorkerService.csproj|solutionrelative:algorithmworkerservice\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmCWorkerService\\Program.cs",
-              "RelativeDocumentMoniker": "AlgorithmCWorkerService\\Program.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmCWorkerService\\Program.cs",
-              "RelativeToolTip": "AlgorithmCWorkerService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:39:06.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmBWorkerService\\Program.cs",
-              "RelativeDocumentMoniker": "AlgorithmBWorkerService\\Program.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmBWorkerService\\Program.cs",
-              "RelativeToolTip": "AlgorithmBWorkerService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Title": "PaginationRequest.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\PaginationRequest.cs",
+              "RelativeDocumentMoniker": "AlgorithmWorkerService\\PaginationRequest.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\PaginationRequest.cs",
+              "RelativeToolTip": "AlgorithmWorkerService\\PaginationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:38:58.963Z",
+              "WhenOpened": "2025-11-21T11:52:04.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Program.cs",
-              "RelativeDocumentMoniker": "AlgorithmWorkerService\\Program.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Program.cs",
-              "RelativeToolTip": "AlgorithmWorkerService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
+              "RelativeDocumentMoniker": "AlgorithmWorkerService\\Worker.cs",
+              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\AlgorithmWorkerService\\Worker.cs",
+              "RelativeToolTip": "AlgorithmWorkerService\\Worker.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:38:46.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Algorithm.Common",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\Algorithm.Common.csproj",
-              "RelativeDocumentMoniker": "Algorithm.Common\\Algorithm.Common.csproj",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\Algorithm.Common.csproj",
-              "RelativeToolTip": "Algorithm.Common\\Algorithm.Common.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-21T11:37:46.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICustomMlContext.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ICustomMlContext.cs",
-              "RelativeDocumentMoniker": "Algorithm.Common\\ICustomMlContext.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ICustomMlContext.cs",
-              "RelativeToolTip": "Algorithm.Common\\ICustomMlContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:37:51.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Algorithm.Common\\DependencyInjection.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\DependencyInjection.cs",
-              "RelativeToolTip": "Algorithm.Common\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:37:48.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductSalesData.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ProductSalesData.cs",
-              "RelativeDocumentMoniker": "Algorithm.Common\\ProductSalesData.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\ProductSalesData.cs",
-              "RelativeToolTip": "Algorithm.Common\\ProductSalesData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:35:48.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CustomMlContext.cs",
-              "DocumentMoniker": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\CustomMlContext.cs",
-              "RelativeDocumentMoniker": "Algorithm.Common\\CustomMlContext.cs",
-              "ToolTip": "R:\\Anomaly-Detector-Dummy4\\backend\\Algorithm.Common\\CustomMlContext.cs",
-              "RelativeToolTip": "Algorithm.Common\\CustomMlContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:30:37.992Z",
+              "WhenOpened": "2025-11-21T11:51:01.698Z",
               "EditorCaption": ""
             }
           ]
