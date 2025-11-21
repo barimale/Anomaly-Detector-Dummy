@@ -39,7 +39,7 @@ namespace Algorithm.A.WorkerService {
                         using var scope = _scopeFactory.CreateScope();
                         var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
 
-                        var questDbClient = new QuestDBClient("http://questdb:9000");
+                        var questDbClient = new QuestDBClient("http://127.0.0.1");
 
                         var request = new PaginationRequest() {
                             PageIndex = 0,
