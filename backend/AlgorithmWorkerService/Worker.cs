@@ -57,6 +57,16 @@ namespace Algorithm.A.WorkerService {
                         var result = await repo.AddAsync(new EventEntry() {
                             Id = Guid.NewGuid().ToString()
                         }, cancellationToken);
+
+                        if(result != null) {
+                            var repo2 = scope.ServiceProvider.GetRequiredService<IQueueService>();
+
+                            var data = new AlgorithmResult() {
+                                Id = Guid.NewGuid().ToString(),
+                            };
+                            await repo2.Publish<AlgorithmResult>(data);
+                            // nadaj wiadomosc rabbitmq do hostedservice w projekcie API
+                        }
                     }
                 }catch(Exception ex) {
                     var i = 0;

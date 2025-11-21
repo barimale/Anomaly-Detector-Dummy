@@ -6,6 +6,7 @@ import { HubConnectionBuilder, LogLevel, IHttpConnectionOptions } from '@microso
 
 const App: React.FC = () => {
   const userToken = "adsjalksdjalkdsjadlka";//useContext(AuthContext);
+  const [messageLengthOver0, setMessageLengthOver0] = useState<boolean>(false);
   const [localesInProgress, setLocalesInProgress] = useState<boolean | null>(null);
   const options: IHttpConnectionOptions = {
     accessTokenFactory: () => `${userToken}`,
@@ -49,10 +50,10 @@ const App: React.FC = () => {
         <h4>Wyszukiwarka anomalii</h4>
       </div>
 
-      <FilesUpload />
+      <FilesUpload OnMessageChanged={() => {setMessageLengthOver0(true)}}/>
       <p style={{
         color: localesInProgress != null ? (localesInProgress ? 'green' : 'red') : 'blue'
-      }}>{localesInProgress != null ? (localesInProgress ? 
+      }}>{localesInProgress != null && messageLengthOver0? (localesInProgress ? 
         'Brak anomalii!' : 
         'Wykryto anomalie!') : 
         'Praca w toku'}

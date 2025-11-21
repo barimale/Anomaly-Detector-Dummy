@@ -7,12 +7,23 @@ interface ProgressInfo {
   percentage: number;
 }
 
-const FilesUpload: React.FC = () => {
+interface FilesUploadProps{
+  OnMessageChanged: ()=> void;
+}
+
+const FilesUpload: React.FC<FilesUploadProps> = (props : FilesUploadProps) => {
   const [selectedFiles, setSelectedFiles] = useState<FileList | null>(null);
   const [progressInfos, setProgressInfos] = useState<Array<ProgressInfo>>([]);
   const [message, setMessage] = useState<Array<string>>([]);
   const [fileInfos, setFileInfos] = useState<Array<IFile>>([]);
   const progressInfosRef = useRef<any>(null);
+
+    useEffect(() => {
+      if(message.length > 0)
+      {
+        props.OnMessageChanged();
+      }
+  }, [message]);
 
   useEffect(() => {
     UploadService.getFiles().then((response) => {

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using System.Text;
+using System.Text.Json;
 
 namespace Common.RabbitMQ {
     public class QueueService : IQueueService
@@ -33,6 +34,23 @@ namespace Common.RabbitMQ {
                 exchange: string.Empty,
                 routingKey: CHANNEL_NAME,
                 Encoding.UTF8.GetBytes(message));
+        }
+
+        public async Task Publish<T>(T message) {
+            using var _connection = await _factory.CreateConnectionAsync();
+            using var _channel = await _connection.CreateChannelAsync();
+            await _channel.QueueDeclareAsync(queue: CHANNEL_NAME,
+                                     durable: false,
+                                     exclusive: false,
+                                     autoDelete: false,
+                                     arguments: null);
+
+            var serialized = JsonSerializer.Serialize(message);
+
+            await _channel.BasicPublishAsync(
+                exchange: string.Empty,
+                routingKey: CHANNEL_NAME,
+                Encoding.UTF8.GetBytes(serialized));
         }
 
     }

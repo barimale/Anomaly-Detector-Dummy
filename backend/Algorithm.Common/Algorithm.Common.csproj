@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common.RabbitMQ\Common.RabbitMQ.csproj" />
     <ProjectReference Include="..\UploadStreamToQuestDB.Domain\UploadStreamToQuestDB.Domain.csproj" />
   </ItemGroup>
 
