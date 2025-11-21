@@ -1,6 +1,8 @@
 using Algorithm.A.WorkerService.Service;
 using Common.RabbitMQ;
+using Microsoft.Extensions.DependencyInjection;
 using MSSql.Infrastructure;
+using Questdb.Net;
 
 namespace Algorithm.A.WorkerService {
     public class Program {
@@ -8,8 +10,10 @@ namespace Algorithm.A.WorkerService {
             var builder = Host.CreateApplicationBuilder(args);
             builder.Services.AddHostedService<Worker>();
             builder.Services.AddRabbitMQServices();
+            builder.Services.AddAlgorithmCommonServices();
             builder.Services.AddMSSQLServices();
             builder.Services.AddScoped<IML, MLNetExecutorA>();
+            builder.Services.AddScoped<IQuestDBClient>(opt => new QuestDBClient());
 
             var host = builder.Build();
             host.Run();

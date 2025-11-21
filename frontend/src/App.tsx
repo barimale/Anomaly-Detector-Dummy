@@ -12,20 +12,20 @@ const App: React.FC = () => {
     withCredentials: false,
   };
   const connection = new HubConnectionBuilder()
-    .withUrl(`http://localhost:53654/notifications`, options)
+    .withUrl(`http://localhost:53654/localesHub`, options)
     .configureLogging(LogLevel.Information)
     .withAutomaticReconnect()
     .build();
 
   connection.on('OnFinishAsync', (id: string) => {
     console.log(`${id} finished.`);
-    alert(`${id} finished.`);
+    // alert(`${id} finished.`);
     setLocalesInProgress(false);
   });
 
   connection.on('OnStartAsync', (id: string) => {
     console.log(`${id} started.`);
-        alert(`${id} started.`);
+        // alert(`${id} started.`);
     setLocalesInProgress(true);
   });
 

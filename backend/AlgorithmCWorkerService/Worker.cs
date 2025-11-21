@@ -29,7 +29,7 @@ namespace Algorithm.C.WorkerService {
                 var obj = JsonSerializer.Deserialize<AlgorithmDetailsC>(body);
 
 
-                if (obj != null) {
+                if (obj != null)    {
                     // execute algorithm C here
                     using var scope = _scopeFactory.CreateScope();
                     var repo = scope.ServiceProvider.GetRequiredService<IEventRepository>();
