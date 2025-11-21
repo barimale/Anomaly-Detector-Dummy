@@ -8,7 +8,8 @@ const App: React.FC = () => {
   const [messageLengthOver0, setMessageLengthOver0] = useState<boolean>(false);
   const [localesInProgress, setLocalesInProgress] = useState<boolean | null>(null);
   const options: IHttpConnectionOptions = {
-    withCredentials: false
+    withCredentials: false,
+    accessTokenFactory: () => "sddadsadsdadsa"
   };
   const connection = new HubConnectionBuilder()
     .withUrl(`http://localhost:53654/localesHub`, options)

@@ -11,7 +11,7 @@ namespace Common.UTs {
         private const string SolutionCPath = @"R:\SolutionC";
 
         private static string BaseDatasetsRelativePath = @"../../../Data";
-        private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/input_dummy.txt";
+        private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/big_file.txt"; //input_dummy
 
         private static string DatasetPath = GetAbsolutePath(DatasetRelativePath);
 
