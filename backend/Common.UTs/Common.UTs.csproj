@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\produkt_zehn_min_tu_19930428_19991231_00003.txt">
+    <None Update="Data\product-sales.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

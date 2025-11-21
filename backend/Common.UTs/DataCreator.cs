@@ -31,17 +31,16 @@ namespace Common.UTs {
             Assert.True(existsC);
         }
 
-        private static string BaseDatasetsRelativePath = @"../../../../Data";
+        private static string BaseDatasetsRelativePath = @"../../../Data";
         private static string DatasetRelativePath = $"{BaseDatasetsRelativePath}/Product-sales.csv";
 
         private static string DatasetPath = GetAbsolutePath(DatasetRelativePath);
 
-        private static string BaseModelsRelativePath = @"../../../../MLModels";
-        private static string ModelRelativePath1 = $"{BaseModelsRelativePath}/ProductSalesSpikeModel.zip";
-        private static string ModelRelativePath2 = $"{BaseModelsRelativePath}/ProductSalesChangePointModel.zip";
+        private static string ModelRelativePath1 = $"R:/SolutionA/ProductSalesSpikeModel.zip";
+        private static string ModelRelativePath2 = $"R:/SolutionB/ProductSalesChangePointModel.zip";
 
-        private static string SpikeModelPath = GetAbsolutePath(ModelRelativePath1);
-        private static string ChangePointModelPath = GetAbsolutePath(ModelRelativePath2);
+        private static string SpikeModelPath = ModelRelativePath1;
+        private static string ChangePointModelPath = ModelRelativePath2;
 
         private static MLContext mlContext;
 
