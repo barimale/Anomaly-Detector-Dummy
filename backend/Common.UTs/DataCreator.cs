@@ -46,6 +46,7 @@ namespace Common.UTs {
 
         [Fact]
         public void Create_models() {
+            //given
             mlContext = new MLContext();
 
             // Assign the Number of records in dataset file to constant variable.
@@ -59,6 +60,7 @@ namespace Common.UTs {
             ITransformer trainedSpikeModel = DetectSpike(size, dataView);
 
             // Detect persistent change in the pattern.
+            //when
             ITransformer trainedChangePointModel = DetectChangepoint(size, dataView);
 
             SaveModel(mlContext, trainedSpikeModel, SpikeModelPath, dataView);
