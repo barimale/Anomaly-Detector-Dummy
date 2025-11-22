@@ -11,6 +11,8 @@ https://www.bezkoder.com/react-multiple-file-upload-typescript/
 
 kilka ai potem system glosujacy prosty (5 glosow)  
 
+openai api gemini api 
+
 przyjmij dane, rozeslij do workerow zbierz dane rabbitmq i wyswietl signalr 
 
 zrobic model anomalii oraz model regularny do wykrywania anomalli  
